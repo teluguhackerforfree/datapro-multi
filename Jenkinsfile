@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('git checkout') {
+        stage('git checkout development branch') {
             steps {
                 echo 'download source code'
 				git 'https://github.com/teluguhackerforfree/maven.git'
